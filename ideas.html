@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;
+            display: flex;
+           flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+/*           
+           background-image: url(16981.jpg);
+           background-attachment: fixed;
+           background-repeat: ; */
+        }
+        .box{
+           position: relative;
+           cursor: pointer;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            text-align: center;
+           width: 300px;
+           height: 300px;
+           background-color: aqua;
+           border-radius: 20%;
+           scale: 0.5;
+           /* transition-delay: 2s; */
+           transition: 1s;
+        }
+        .box:hover{
+            scale:1;
+            /* rotate: 360Deg; */
+        }
+       
+       /* .box::before{
+            transition: all 0.5s;
+            animation: bh infinite 1s;
+        } */
+        
+        /* /* .text::before{
+            content: '';
+            color: aliceblue;
+            height: 200px;
+            animation: bharghav infinite 2s ease forwards;
+            scale: 0.5;
+            transition: all 0.5s; */
+       
+
+        /* @keyframes bharghav{
+            0%{
+                content: 'bharghav';
+                color: blue;
+            }
+             50%{
+                content: 'kilaparthi bhargav';
+            }
+        }  */
+
+        /* @keyframes bh{
+            100%{
+               content: ;
+                background-color: rgb(6, 6, 31);
+            } 
+                } */
+.logo{
+    height: 100px;
+    position: relative;
+    color: #ffffff;
+    font-size: 30px;
+    
+    background-color: #1313f1;
+}
+.logo::before{
+    height: 100px;
+    top: 0;
+    content: "";
+    position: absolute;
+    background-color:#ff0000 ;
+    animation: showtoleft 2s infinite alternate ;
+    bottom: 0;
+    right:0;
+    /* animation-delay: .3s; */
+}
+/**** KEYFRAMES *****/
+@keyframes showtoleft {
+    0% {
+        content: "hi";
+        color: #fe0000;
+        width: 100%;
+        background-color:rgb(255, 255, 255);  
+    }
+    100%{
+        content: "HI";
+        width: 0;
+        background-color: rgb(0, 0, 0) ;
+    }
+} 
+.moon1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+   
+}
+.moon{
+    position: relative;
+    background: radial-gradient(circle, rgba(22,53,207,1) 0%, rgba(9,9,9,1) 100%);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow:0px 0px 20px #000;
+    
+} 
+.moon::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    content: "..";
+    color: aliceblue;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    /* animation:  moon 3.2s infinite ease; */
+    /* animation:  moon 3.2s infinite ease-in; */
+    /* animation:  moon 3s infinite ease-in-out; */
+    animation: moon 0.9s infinite alternate;
+}
+@keyframes moon {
+    0%{
+        transform: translatex(0) scale(0.9);
+        box-shadow: none;
+        background-color: rgb(255, 255, 255);
+    }50%{
+        transform: translatex() scale(1);
+        box-shadow:0px 0px 40px #00ffff,0px 0px 40px rgb(255, 255, 255);
+    }100%{
+        transform: translatex(0) scale(2);
+        box-shadow:0px 0px 40px #0521f1,0px 0px 40px rgb(185, 15, 15);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 200px;
+    border: #00ffff solid;
+   
+}
+.search input{
+    margin-left: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    opacity: 0.6;
+    transition:all 3s ease-in-out ;
+}
+.d-flex{
+    position: absolute;
+    transform:translate(0,-50%);
+    transition: 1s;
+}
+.search input:focus{
+    opacity: 1;
+    width: 400px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>cheem tapaka tum tum</h1>    
+    </div>
+    
+<div class="logo"> 
+    <p>sdfasdfjksdfhdf</p>
+</div>
+- <marquee
+    bgcolor="yellow"
+    direction="right"
+    scrollamount="100"
+     behavior="alternate">
+       <h1>head</h1> 
+    </marquee>
+    <marquee 
+    bgcolor="red"
+    scrollamount="50"
+    direction="left">
+        <p>Title</p>
+    </marquee> 
+    <div class="moon1" >
+        <div class="moon"></div>
+        
+    </div>
+    <nav class="search navbar-light bg-light">
+          <form class="d-flex">
+            <input type="search" name="search" id="" placeholder="Search">
+            <input type="submit" value="submit">
+        </form>
+      </nav>
+
+
+
+      
+</body>
+</html>
