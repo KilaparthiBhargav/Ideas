@@ -1,2 +1,0 @@
-create text.txt  
-sdfkdf
